@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.fbmail h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+form input {
+    border-radius: 10px 10px 10px 10px;
+    width:  250px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 1rem;
+}
+.display {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.placeholder {
+    margin-top: 1rem;
+}
+.forgot {
+    color: red;
+}
+.signin button {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    width:  250px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.headercontainer {
+    border: 1px solid #DEDEDE;
+    box-shadow: 19px 13px 19px 13px white;
+    padding: 2rem 2rem 2rem 2rem;
+    width: fit-content;
+    margin: auto;
+}

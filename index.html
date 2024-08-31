@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headercontainer">
+        <div class="mail">
+            <div class="fbmail">
+                Email
+            </div>
+            <form >
+                <input type="text" placeholder="example@gmail.com">
+            </form>
+        </div>
+        <div class="placeholder">
+            <div class="password">Password</div>
+            <form >
+                <input type="password"  placeholder="Enter Your password                              &#x1f441;">
+            </form> 
+           <div class="display">
+             <div class="flex">
+                <input type="checkbox" onclick="myFunction()"><b>Remember me</b>
+             </div>
+             <div class="forgot">
+                Forgot Password ?
+             </div>
+           </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            </script>
+        </div>
+        <div class="signin">
+            <button>Sign in</button>
+        </div>
+    </div>
+</body>
+</html>
