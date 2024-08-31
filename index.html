@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>facebook login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <div class="headercontainer">
@@ -18,8 +19,9 @@
         </div>
         <div class="placeholder">
             <div class="password">Password</div>
-            <form >
-                <input type="password"  placeholder="Enter Your password                              &#x1f441;">
+             <form >
+                <input id="password field" type="password" placeholder="Enter Your password " &  id= "id_password">
+                <!-- <i class="far fa-eye" id="togglepassword"></i>  -->
             </form> 
            <div class="display">
              <div class="flex">
@@ -39,6 +41,16 @@
                 x.type = "password";
               }
             }
+            const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
             </script>
         </div>
         <div class="signin">
